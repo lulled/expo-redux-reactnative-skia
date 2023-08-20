@@ -13,7 +13,7 @@ export default function Cart() {
       dispatch(remove(id));
     }
     const product =({ item }) => (
-        <View className='h-[270px] rounded-lg  shadow-sm shadow-slate-400  ml-2 mt-2 mb-10 bg-white px-4 py-4' style={{width:p_width,}}>
+        <View className='h-[250px] w-full rounded-lg  shadow-sm shadow-slate-400  ml-2 mt-2 mb-10 pb-20 bg-white px-4 py-4' style={{width:p_width,}}>
             <Image
                 resizeMode='contain'
                 className='w-full h-full rounded-lg '
@@ -28,14 +28,15 @@ export default function Cart() {
         </View>
     );
   return (
-    <View className= 'pt-12 justify-right  pb-20 items-center'>
+    <View className= 'pt-10 justify-right   items-center pb-20 mb-20'>
       <Text className='  text-black font-bold text-3xl items-left text=left py-4 px-4'> products in cart </Text>
+      <Text className='text-2xl font-meduim text-slate-600  pb-6 px-8 pt-4 mb-4 bg-white'>Items in Cart : <Text className='text-blue-600 text-3xl font-bold' >{cartState.length}</Text></Text>
         <FlatList
             data={cartState}
             keyExtractor={(item) => String(item.id)}
-            verticle
+            vertical
             showsVerticalScrollIndicator={false}
-            numColumns={2}   
+            numColumns={1}   
             renderItem={product}
             
         />

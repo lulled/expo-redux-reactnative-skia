@@ -13,7 +13,7 @@ export default function AppStack() {
   return (
     
     <AppStackNav.Navigator>
-        <AppStackNav.Screen name='home' component={Products}/>
+        <AppStackNav.Screen name='Shop' component={Products}/>
         <AppStackNav.Screen name='details' component={ProductsDetails}/>
         <AppStackNav.Screen name='Cart' component={Cart}/>  
         <AppStackNav.Screen name='CartItems' component={CartItems}/>  
