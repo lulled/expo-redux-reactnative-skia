@@ -1,6 +1,5 @@
 import { View, Text, FlatList, Image, SafeAreaView,Dimensions, TouchableOpacity} from 'react-native'
 import React,{useEffect} from 'react'
-
 import { useSelector,useDispatch } from 'react-redux';
 import {add } from '../grobal-state/CartSlice'
 import CartItems from './CartItems';
@@ -14,13 +13,16 @@ const dispatch =useDispatch();
 // flatlist expects productData as an array dataType so 
 // u have to pass it in explicty like data ={productData.data}
 // "data" = the array inside the initialstate object in productSlice.
-
-const productsData = useSelector(state=>state.products);
+const {data:productsData,status}  = useSelector(state=>state.products);
         useEffect(()=>{
             dispatch(getProducts());
         },[])
 
-
+     if(status === 'loading'){
+        return(
+            <Text className ='text-center  text-black font-meduim text-2xl py-6 '>Loading.....</Text>
+        )
+     }
     const addToCart =(product)=>{
         // dispatch  to add action 
         dispatch(add(product));
@@ -31,7 +33,7 @@ const productsData = useSelector(state=>state.products);
     const product =({ item }) => (
         <View className='h-[270px] rounded-lg  shadow-sm shadow-slate-400  ml-2 mt-2 mb-4 bg-white px-4 py-4' style={{width:p_width,}}>
             <Image
-                resizeMode='cover'
+                resizeMode='contain'
                 className='w-full h-full rounded-lg '
                 source={{ uri: item.image }}
             />
@@ -49,7 +51,7 @@ const productsData = useSelector(state=>state.products);
         <CartItems />
         <Text className='  text-black font-bold text-3xl items-left text=left py-4 px-4'>List of products</Text>
         <FlatList
-            data={productsData.data}
+            data={productsData}
             keyExtractor={(item) => item.id.toString()}
             vertical
             showsVerticalScrollIndicator={false}

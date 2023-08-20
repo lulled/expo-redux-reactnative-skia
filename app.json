@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "expo-redux-app-me",
-    "slug": "expo-redux-app-me",
+    "name": "shop",
+    "slug": "shop",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/expo-icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splashscreen.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -21,10 +21,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.luleahmed.exporeduxappme"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "688e5fdb-ad6f-4b22-a554-fef9e49748af"
+      }
     }
   }
 }

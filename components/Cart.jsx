@@ -15,7 +15,7 @@ export default function Cart() {
     const product =({ item }) => (
         <View className='h-[270px] rounded-lg  shadow-sm shadow-slate-400  ml-2 mt-2 mb-10 bg-white px-4 py-4' style={{width:p_width,}}>
             <Image
-                resizeMode='cover'
+                resizeMode='contain'
                 className='w-full h-full rounded-lg '
                 source={{ uri: item.image }}
             />
