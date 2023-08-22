@@ -6,13 +6,14 @@ import ProductsDetails from '../components/ProductsDetails'
 import Cart from '../components/Cart';
 import CartItems from '../components/CartItems'
 import { NavigationContainer } from '@react-navigation/native'
-
+import WellCome from '../components/WellCome'
 const AppStackNav = createNativeStackNavigator()
 
 export default function AppStack() {
   return (
     
     <AppStackNav.Navigator>
+        <AppStackNav.Screen name='WellCome' component={WellCome} options={{headerShown:false,}}/>
         <AppStackNav.Screen name='Shop' component={Products}/>
         <AppStackNav.Screen name='details' component={ProductsDetails}/>
         <AppStackNav.Screen name='Cart' component={Cart}/>  
