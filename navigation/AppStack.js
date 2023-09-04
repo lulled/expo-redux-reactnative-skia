@@ -7,6 +7,11 @@ import Cart from '../components/Cart';
 import CartItems from '../components/CartItems'
 import { NavigationContainer } from '@react-navigation/native'
 import WellCome from '../components/WellCome'
+import AnimatedCard from'../components/AnimatedCard';
+import LinearGradientt from '../components/LinearGradientt'
+import Skia from '../components/Skia';
+
+
 const AppStackNav = createNativeStackNavigator()
 
 export default function AppStack() {
@@ -18,6 +23,9 @@ export default function AppStack() {
         <AppStackNav.Screen name='details' component={ProductsDetails}/>
         <AppStackNav.Screen name='Cart' component={Cart}/>  
         <AppStackNav.Screen name='CartItems' component={CartItems}/>  
+        <AppStackNav.Screen name='AnimatedCard' component={AnimatedCard}/> 
+        <AppStackNav.Screen name='Skia' component={Skia}/>   
+        <AppStackNav.Screen name='LinearGradientt' component={LinearGradientt}/>   
    </AppStackNav.Navigator>
    
   )

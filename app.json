@@ -14,8 +14,10 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "permissions": ["CAMERA_ROLL"],
+    "platforms": ["ios", "android"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,"bundleIdentifier": "com.yourdomain.shop"
     },
     "android": {
       "adaptiveIcon": {
