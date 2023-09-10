@@ -53,7 +53,7 @@ export default function WellCome() {
       <TouchableOpacity  className='justify-between ml-10 mt-2  mr-6 items-end' onPress={() => navigation.navigate('Skia', {})}>
         <Text className='w-[150px] bg-orange-500 text-black text-center font-medium text-[18px] p-2 rounded-[50px]'>Hello-Skia</Text>
       </TouchableOpacity>
-      <TouchableOpacity  className='justify-between ml-10 mt-2  mr-6 items-end' onPress={() => navigation.navigate('LinearGradientt', {})}>
+      <TouchableOpacity  className='justify-between ml-10 mt-2  mr-6 items-end' onPress={() => navigation.navigate('Linear', {})}>
         <Text className='w-[150px] bg-fuchsia-500 text-black text-center font-medium text-[18px] p-2 rounded-[50px]'>Gradient</Text>
       </TouchableOpacity>
       

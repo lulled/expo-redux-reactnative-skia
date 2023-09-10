@@ -9,7 +9,10 @@ import {
   vec,
   RoundedRect
 } from "@shopify/react-native-skia";
+import WavyThingy from "./WavyThingy";
  
+
+
 const {width,height} = Dimensions.get('window');
 console.log(width,height);
 export default function LinearGradientt(){

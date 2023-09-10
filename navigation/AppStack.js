@@ -8,7 +8,7 @@ import CartItems from '../components/CartItems'
 import { NavigationContainer } from '@react-navigation/native'
 import WellCome from '../components/WellCome'
 import AnimatedCard from'../components/AnimatedCard';
-import LinearGradientt from '../components/LinearGradientt'
+import Linear from '../components/Linear'
 import Skia from '../components/Skia';
 
 
@@ -25,7 +25,7 @@ export default function AppStack() {
         <AppStackNav.Screen name='CartItems' component={CartItems}/>  
         <AppStackNav.Screen name='AnimatedCard' component={AnimatedCard}/> 
         <AppStackNav.Screen name='Skia' component={Skia}/>   
-        <AppStackNav.Screen name='LinearGradientt' component={LinearGradientt}/>   
+        <AppStackNav.Screen name='Linear' component={Linear}/>   
    </AppStackNav.Navigator>
    
   )
