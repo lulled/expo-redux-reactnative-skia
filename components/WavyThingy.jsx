@@ -20,7 +20,7 @@ export default function WavyThingy({ style }) {
             return(
                 <MotiView
                 from={{opacity:0.7,scale:1}}
-                animate={{opacity:0,scale:3}}
+                animate={{opacity:0,scale:4}}
                 transition={{
                     type:'timing',
                     duration:1000,
