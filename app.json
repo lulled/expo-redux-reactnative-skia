@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "shop",
+    "name": "Shop",
     "slug": "shop",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -14,7 +14,7 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "permissions": ["CAMERA_ROLL"],
+   
     "platforms": ["ios", "android"],
     "ios": {
       "supportsTablet": true,"bundleIdentifier": "com.yourdomain.shop"

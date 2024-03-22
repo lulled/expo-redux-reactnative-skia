@@ -60,6 +60,9 @@ export default function WellCome() {
       <TouchableOpacity  className='justify-between ml-10 mt-2  mr-6 items-end' onPress={takeScreenshot}>
         <Text className='w-[150px] bg-white text-black text-center font-medium text-[18px] p-2 rounded-[50px]'>Screen-shot</Text>
       </TouchableOpacity>
+      <TouchableOpacity  className='justify-between ml-10 mt-2  mr-6 items-end' onPress={() => navigation.navigate('Spinner', {})}>
+        <Text className='w-[150px] bg-white text-black text-center font-medium text-[18px] p-2 rounded-[50px]'>Spinner</Text>
+      </TouchableOpacity>
       
       {/* Assuming these are your other components */}
        <WellComeAnime />

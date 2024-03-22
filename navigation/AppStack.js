@@ -10,7 +10,7 @@ import WellCome from '../components/WellCome'
 import AnimatedCard from'../components/AnimatedCard';
 import Linear from '../components/Linear'
 import Skia from '../components/Skia';
-
+import Spinner from '../components/Spinner';
 
 const AppStackNav = createNativeStackNavigator()
 
@@ -26,6 +26,7 @@ export default function AppStack() {
         <AppStackNav.Screen name='AnimatedCard' component={AnimatedCard}/> 
         <AppStackNav.Screen name='Skia' component={Skia}/>   
         <AppStackNav.Screen name='Linear' component={Linear}/>   
+        <AppStackNav.Screen name='Spinner' component={Spinner}/>   
    </AppStackNav.Navigator>
    
   )
